@@ -1,0 +1,127 @@
+/* 
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5. Otros --> reglas CSS y más
+*/
+
+:root {
+    /*colores*/
+    /*### Primary*/
+  
+    --Dark-yan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+  
+    /*### Neutral*/
+  
+    --Dark-gray: hsl(0, 0%, 59%);
+  
+    /*Fuente*/
+    --fuente-principal: "Kumbh Sans", sans-serif;
+    /* Font size (name and stats): 18px */
+  }
+  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--fuente-principal);
+}
+
+body {
+    background: url(../images/bg-pattern-top.svg) left -350px top -280px no-repeat,url(../images/bg-pattern-bottom.svg) left 180px top 350px no-repeat ;
+    background-size: 150%;
+    background-color: var(--Dark-yan);  
+    
+    
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    max-width: calc(375 * 0.86px);
+    height: auto;
+    margin:  13rem auto;  
+    border-radius: 1.5rem;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+/* Internal top Bg */
+.card__header {
+    width: 100%;
+    height: 16rem;
+    background: url('../images/bg-pattern-card.svg') no-repeat center/cover;
+    
+}
+
+/* Profile */
+
+.card__profile-info {
+    text-align: center;
+}
+
+.card__profile-picture {
+    margin: 0 auto;
+    margin-top: -50px;
+    border: .5rem solid white;
+    border-radius: 50%;
+    
+}
+
+.card__name {
+    margin: 2rem auto 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card__age {
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+
+.card__info {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--Dark-gray);
+}
+
+.card__social-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto 2rem;
+    border-top: 1px solid lightgray;
+    
+}
+
+.mini__card {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.mini__card p:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.mini__card sub:nth-of-type(1) {
+   color: var(--Dark-gray);
+   font-size: 1rem;
+   letter-spacing: 0.2rem;
+
+}
+

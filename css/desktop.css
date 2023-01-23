@@ -1,0 +1,11 @@
+body {
+    background: url(../images/bg-pattern-top.svg) left -450px top -480px no-repeat,url(../images/bg-pattern-bottom.svg) right -220px top 400px no-repeat ;
+    /* background-size: 100%; */
+    background-color: var(--Dark-yan);  
+    
+}
+
+main {
+    margin: 10% auto;
+}
+
