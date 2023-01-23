@@ -3,7 +3,7 @@
 <div align="center">
  <h1>Profile card component with CSS</h1>
  <h3>
-    <a href="https://rvivenzio.github.io/3-column-preview-card-component-main/">
+    <a href="https://rvivenzio.github.io/profile-card-component-main/">
       Live
     </a>
     <span>&nbsp;|&nbsp;</span>
